@@ -161,7 +161,7 @@ function love.draw()
     end
     DrawHearts(hearts)
     love.graphics.setColor(1, 1, 1)
-    DrawMenus(menus)
+    DrawMenus(menus, world)
     love.graphics.setColor(0, 0, 0)
     DrawMouse(mouse)
     if player.completedlevel == true then

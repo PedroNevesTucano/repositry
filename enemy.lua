@@ -17,7 +17,6 @@ end
 
 function UpdateEnemies(player, enemies, dt)
     for i = 1, #enemies, 1 do
-        if player.resetstate == false then
         local playerposition = vector2.new(player.body:getPosition())
         local enemyposition = vector2.new(enemies[i].body:getPosition())
         local playerdirection = vector2.sub(playerposition, enemyposition)
@@ -35,7 +34,6 @@ function UpdateEnemies(player, enemies, dt)
                 elseif enemies[i].state == "attacking" then
                     enemies[i].body:setLinearVelocity(0, 0)
                 end
-            end
         end
     end
 end

@@ -17,7 +17,6 @@ function CreatePlayer(world, x, y)
     player.gettingattacked = false
     player.attackedCooldown = 0
     player.attackedcooldowntime = 0.5
-    player.resetstate = false
     player.canGetDamaged = false
     player.damaged = false
     player.gameover = false

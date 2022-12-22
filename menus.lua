@@ -38,7 +38,7 @@ function CreateMenus(world)
     return menus
 end
 
-function UpdateMenus(menus, mouse, player)
+function UpdateMenus(menus, mouse, player, world)
     if love.keyboard.isDown("escape") and player.gameover == false and menus.mainmenu.state == false and player.completedlevel == false then
         menus.paused.state = true
     end
